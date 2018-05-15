@@ -25,7 +25,7 @@
                 $this->table->set_heading("Excluir","Alterar","Permissões","Usuário");
                 foreach($usuarios as $usuario){
                     $excluir = anchor(base_url("administracao/usuarios/excluir/".$usuario->id),"Excluir");
-                    $alterar = anchor(base_url("administracao/usuarios/alterar/".$usuario->id),"Aleterar");
+                    $alterar = anchor(base_url("administracao/usuarios/alterar/".$usuario->id),"Alterar");
                     $permissoes = anchor(base_url("administracao/usuarios/permissoes/".$usuario->id),"Permissões");
                     $this->table->add_row($excluir,$alterar,$permissoes,$usuario->login);
                 }

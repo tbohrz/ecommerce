@@ -39,7 +39,7 @@
                             $imagem = img("assets/img/produtos/".md5($produto->id).".jpg");
                         }
                         $excluir = anchor(base_url("administracao/produtos/excluir/".md5($produto->id)),"Excluir",array('onclick'=>"return confirm('Confirma exclusão?')"));
-                        $alterar = anchor(base_url("administracao/produtos/alterar/".md5($produto->id)),"Aleterar");
+                        $alterar = anchor(base_url("administracao/produtos/alterar/".md5($produto->id)),"Alterar");
                         $codigo = $produto->codigo;
                         $categoria = $produto->categoria;
                         $titulo = $produto->titulo;
